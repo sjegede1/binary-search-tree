@@ -1,7 +1,11 @@
+body {
+    text-align: center;
+}
+
 form.form-entry {
     margin: 30px;
     margin-inline: auto;
-    border: solid yellow;
+    /* border: solid yellow; */
     width: fit-content;
 }
 
@@ -15,8 +19,10 @@ form.form-entry {
 .node-children {
     display: grid;
     border: solid blue;
+    border-width: 0px 1px;
     width: fit-content;
     grid-template-columns: 1fr 1fr;
+    margin: 1px 2em;
 }
 
 .node-name {
@@ -30,6 +36,6 @@ form.form-entry {
 .node-grid {
     margin: 2em;
     margin-inline: auto;
-    border: solid red;
+    /* border: solid red; */
     width: fit-content
 }
