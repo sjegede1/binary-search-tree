@@ -1,0 +1,35 @@
+form.form-entry {
+    margin: 30px;
+    margin-inline: auto;
+    border: solid yellow;
+    width: fit-content;
+}
+
+.node {
+    /* border: solid red; */
+    text-align: center;
+    width: fit-content;
+    /* margin: 2px 30px; */
+}
+
+.node-children {
+    display: grid;
+    border: solid blue;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+}
+
+.node-name {
+    border: solid green;
+    border-radius: 500px;
+    margin: 0px 1em;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.node-grid {
+    margin: 2em;
+    margin-inline: auto;
+    border: solid red;
+    width: fit-content
+}
