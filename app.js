@@ -10,8 +10,8 @@ class Node {
     this.right = null;
     this.element = nodeElem.cloneNode();
     this.nodeChildren = document.createElement("div");
-    this.nodeChildren.className = "node-children";
-    this.element.innerHTML = `<h2 class=node-name> Node ${value} </h2>`;
+    this.nodeChildren.classList.add("node-children");
+    this.element.innerHTML = `<h2 class="node-name"> Node ${value} </h2>`;
     this.element.appendChild(this.nodeChildren);
     this.element.id = this.value;
     this.isAppended = false;
@@ -21,12 +21,14 @@ class Node {
 
   buildChildren() {
     if (this.left) {
+      this.left.element.classList.add("left")
       this.nodeChildren.prepend(this.left.element);
       this.left.isAppended = true;
       console.log(`left ${this.left.value} success`);
       this.left.buildChildren();
     }
     if (this.right) {
+      this.right.element.classList.add("right")
       this.nodeChildren.append(this.right.element);
       this.right.isAppended = true;
       this.right.buildChildren();

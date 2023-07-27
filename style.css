@@ -20,7 +20,8 @@ form.form-entry {
     display: grid;
     border: solid blue;
     border-width: 0px 1px;
-    width: fit-content;
+    width: 100%;
+    grid-template-areas: "left right";
     grid-template-columns: 1fr 1fr;
     margin: 1px 2em;
 }
@@ -38,4 +39,12 @@ form.form-entry {
     margin-inline: auto;
     /* border: solid red; */
     width: fit-content
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
 }
